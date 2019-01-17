@@ -30,7 +30,6 @@
 							<nav class="main_nav">
 								<ul class="d-flex flex-row align-items-start justify-content-start">
 									<li class="active"><a href="home">Home</a></li>
-									<li><a href="about">About us</a></li>
 									<li><a href="route">Select Route</a></li>
 									<li><a href="facility">Extra Facility</a></li>
 									<li><a href="checkDetails">Booking Details</a></li>
@@ -71,9 +70,9 @@
 		<div class="menu_content">
 			<ul>
 				<li><a href="index.jsp">Home</a></li>
-				<li><a href="about.html">About us</a></li>
 				<li><a href="route.jsp">Select Route</a></li>
 				<li><a href="facility.jsp">Extra Facility</a></li>
+				<li><a href="checkDetails">Booking Details</a></li>
 			</ul>
 		</div>
 		<div class="menu_social">

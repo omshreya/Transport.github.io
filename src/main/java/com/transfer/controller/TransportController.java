@@ -26,6 +26,8 @@ public class TransportController
 	@Autowired
 	private TransferService service;
 	
+	private int count=12,seatnumber=0;
+	
 	@RequestMapping("/login")
 	public String doLogin()
 	{
@@ -57,12 +59,6 @@ public class TransportController
 	public String goHome()
 	{
 		return "home";
-	}
-	
-	@RequestMapping("about")
-	public String goAbout()
-	{
-		return "about";
 	}
 	
 	@RequestMapping("route")
@@ -122,7 +118,7 @@ public class TransportController
 	
 	
 	@RequestMapping("/fixRoute")
-	public String check(Trip trip,HttpSession session)
+	public String check(Trip trip,HttpSession session,Model model)
 	{
 		Date str=trip.getTripDate();
 		System.out.println("Trip date:"+str);
@@ -149,6 +145,12 @@ public class TransportController
 		t.setCust(cust);
 		service.getDetails(t);
 		System.out.println(t.toString());
+		
+		for(int i=1;i<=count;i++)
+		{
+			seatnumber=i;
+			model.addAttribute("seatnumber", seatnumber);
+		}
 		return "report";
 	}
 	

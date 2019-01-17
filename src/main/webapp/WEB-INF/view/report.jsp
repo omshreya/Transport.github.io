@@ -80,7 +80,7 @@
 	</tr>
 	<tr>
 		<th>Seat Number</th>
-		<td>08</td>
+		<td>${seatnumber}</td>
 	</tr>
 	<tr>
 		<th>Bill</th>
